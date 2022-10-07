@@ -1,6 +1,5 @@
 package com.clientui;
 
-import com.clientui.exceptions.CustomErrorDecoder;
 import com.clientui.proxies.MicroserviceProduitsProxy;
 import feign.Feign;
 import org.springframework.boot.SpringApplication;
@@ -16,11 +15,11 @@ public class ClientUiApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ClientUiApplication.class, args);
 
-	/*	Feign.builder()
+		Feign.builder()
 				.contract(new SpringMvcContract())
 				.errorDecoder(new CustomErrorDecoder())
 				.target(MicroserviceProduitsProxy.class, "localhost:9001");
-				*/
+
 	}
 
 

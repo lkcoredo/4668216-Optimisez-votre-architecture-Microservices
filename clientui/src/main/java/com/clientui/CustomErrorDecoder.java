@@ -1,2 +1,11 @@
-package com.clientui;public class CustomErrorDecoder {
+package com.clientui;
+
+import feign.Response;
+import feign.codec.ErrorDecoder;
+
+public class CustomErrorDecoder implements ErrorDecoder {
+    @Override
+    public Exception decode(String s, Response response) {
+        return null;
+    }
 }
